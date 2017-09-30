@@ -1,0 +1,26 @@
+.img-size-sm {
+  width: 200px;
+  height: 200px;
+}
+
+.img-size-cover {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-container {
+  padding: 10px;
+  display: block;
+  margin: auto;
+}
+
+.img-intro {
+  background-image: url('../images/steven.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}

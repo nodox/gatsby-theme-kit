@@ -1,9 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 const BUILD_TIME = new Date().getTime();
 
 export default class HTML extends React.Component {
+  constructor(){
+    super()
+
+    this.state = {
+      isNavPanelVisible: false
+    }
+  }
+
   static propTypes = {
     body: PropTypes.string,
   };
