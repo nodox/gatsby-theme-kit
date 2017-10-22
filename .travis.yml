@@ -1,20 +1,8 @@
 language: node_js
 node_js:
-  - "node"
-cache:
-  yarn: true
-
-before_install: yarn global add greenkeeper-lockfile@1
-
-before_script: greenkeeper-lockfile-update
-script: yarn test
-after_script: greenkeeper-lockfile-upload
-
-before_deploy: yarn build -- --prefix-paths
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GH_TOKEN
-  local_dir: public
-  on:
-    branch: master
+  - "8"
+install:
+  - npm install
+script:
+  - npm test
+sudo: false
