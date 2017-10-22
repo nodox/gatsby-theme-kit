@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import PreviewPost from '../themes/massively/components/PreviewPost';
 
-export default function Index({ data, ...help }) {
+export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (

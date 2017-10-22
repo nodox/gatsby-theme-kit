@@ -20,7 +20,12 @@
     "react-icons": "~2.2.5"
   },
   "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "gh-pages": "~1.0.0",
+    "jest": "^21.2.1",
     "prettier": "~1.7.2"
   },
   "keywords": [
@@ -37,6 +42,6 @@
     "serve": "gatsby serve",
     "start": "npm run develop",
     "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Should probably write some tests!\""
+    "test": "jest"
   }
 }
