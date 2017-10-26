@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> should render correctly 1`] = `
+<nav
+  id="nav"
+>
+  <ul
+    className="links"
+  >
+    <li
+      className=""
+      key="0"
+    >
+      <GatsbyLink
+        to="/"
+      >
+        Home
+      </GatsbyLink>
+    </li>
+  </ul>
+  <ul
+    className="icons"
+  >
+    <li
+      key="0"
+    >
+      <a
+        className="icon fa-twitter"
+        href="https://www.twitter.com/stevennatera"
+      >
+        <span
+          className="label"
+        >
+          Twitter
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

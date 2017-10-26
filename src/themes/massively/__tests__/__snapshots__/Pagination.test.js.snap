@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> should render correctly 1`] = `
+<footer>
+  <div
+    className="pagination"
+  >
+    <a
+      className="previous"
+      href="#"
+    >
+      Prev
+    </a>
+    <a
+      className="page active"
+      href="#"
+    >
+      1
+    </a>
+    <a
+      className="page"
+      href="#"
+    >
+      2
+    </a>
+    <a
+      className="page"
+      href="#"
+    >
+      3
+    </a>
+    <span
+      className="extra"
+    >
+      …
+    </span>
+    <a
+      className="page"
+      href="#"
+    >
+      8
+    </a>
+    <a
+      className="page"
+      href="#"
+    >
+      9
+    </a>
+    <a
+      className="page"
+      href="#"
+    >
+      10
+    </a>
+    <a
+      className="next"
+      href="#"
+    >
+      Next
+    </a>
+  </div>
+</footer>
+`;

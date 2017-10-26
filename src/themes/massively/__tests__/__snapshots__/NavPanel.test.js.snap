@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavPanel /> should render correctly 1`] = `
+<div
+  id="navPanel"
+>
+  <nav>
+    <ul
+      className="links"
+    >
+      <li
+        key="0"
+      >
+        <GatsbyLink
+          onClick={[Function]}
+          to="/"
+        >
+          Home
+        </GatsbyLink>
+      </li>
+    </ul>
+    <ul
+      className="icons alt"
+    >
+      <li
+        key="0"
+      >
+        <a
+          className="icon fa-twitter alt"
+          href="https://www.twitter.com/stevennatera"
+        >
+          <span
+            className="label"
+          >
+            Twitter
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <a
+    className="close"
+    href="#navPanel"
+    onClick={[Function]}
+    style={
+      Object {
+        "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+      }
+    }
+  />
+</div>
+`;

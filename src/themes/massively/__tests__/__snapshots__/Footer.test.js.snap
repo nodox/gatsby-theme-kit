@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render correctly 1`] = `
+<footer
+  id="footer"
+>
+  <section>
+    <form
+      action="/thanks/"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      encType="application/x-www-form-urlencoded"
+      method="post"
+      name="contact"
+    >
+      <input
+        name="form-name"
+        type="hidden"
+        value="contact"
+      />
+      <p
+        hidden={true}
+      >
+        <label>
+          Don’t fill this out: 
+          <input
+            name="bot-field"
+          />
+        </label>
+      </p>
+      <div
+        className="field"
+      >
+        <label>
+          Name
+        </label>
+        <input
+          id="name"
+          name="name"
+          placeholder="Your name"
+          type="text"
+        />
+      </div>
+      <div
+        className="field"
+      >
+        <label>
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          placeholder="Your email"
+          type="email"
+        />
+      </div>
+      <div
+        className="field"
+      >
+        <label>
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your message"
+          rows="3"
+        />
+      </div>
+      <ul
+        className="actions"
+      >
+        <li>
+          <input
+            type="submit"
+            value="Send Message"
+          />
+        </li>
+      </ul>
+    </form>
+  </section>
+  <section
+    className="split contact"
+  >
+    <section>
+      <h3>
+        Social
+      </h3>
+      <ul
+        className="icons alt"
+      >
+        <li>
+          <a
+            className="icon alt fa-twitter"
+            href="https://www.twitter.com/stevennatera"
+          >
+            <span
+              className="label"
+            >
+              Twitter
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="icon alt fa-linkedin"
+            href="https://www.linkedin.com/in/snatera"
+          >
+            <span
+              className="label"
+            >
+              Facebook
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="alt icon fa-github"
+            href="https://www.github.com/nodox"
+          >
+            <span
+              className="label"
+            >
+              GitHub
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</footer>
+`;

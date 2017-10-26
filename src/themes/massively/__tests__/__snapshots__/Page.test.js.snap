@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> should render correctly 1`] = `
+<div
+  id="main"
+>
+  <section
+    className="post"
+  >
+    <header
+      className="major"
+    >
+      <h1>
+        Steven Natera
+      </h1>
+    </header>
+    <div
+      className="image main"
+    >
+      <img
+        alt=""
+        src="images/pic01.jpg"
+      />
+    </div>
+    <p>
+      Hello World we need a description
+    </p>
+  </section>
+</div>
+`;

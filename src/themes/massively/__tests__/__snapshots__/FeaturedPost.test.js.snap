@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeaturedPost /> should render correctly 1`] = `
+<article
+  className="post featured"
+>
+  <header
+    className="major"
+  >
+    <span
+      className="date"
+    >
+      YYYY-MM-DD
+    </span>
+    <h2>
+      <GatsbyLink
+        to="/post"
+      >
+        Hello, world!
+      </GatsbyLink>
+    </h2>
+    <p>
+      Hello, world my name is lorem ipsum.
+    </p>
+  </header>
+  <GatsbyLink
+    className="image main"
+    to="/post"
+  >
+    <img
+      alt=""
+      src="images/pic01.jpg"
+    />
+  </GatsbyLink>
+  <ul
+    className="actions"
+  >
+    <li>
+      <GatsbyLink
+        className="button big"
+        to="/post"
+      >
+        Full Story
+      </GatsbyLink>
+    </li>
+  </ul>
+</article>
+`;

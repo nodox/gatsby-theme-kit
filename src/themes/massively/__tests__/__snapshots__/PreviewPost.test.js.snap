@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PreviewPost /> should render correctly 1`] = `
+<article>
+  <header>
+    <span
+      className="date"
+    >
+      YYYY-MM-DD
+    </span>
+    <h2>
+      <GatsbyLink
+        to="/post"
+      >
+        Hello, world!
+      </GatsbyLink>
+    </h2>
+  </header>
+  <p>
+    Hello, world my name is lorem ipsum.
+  </p>
+  <ul
+    className="actions"
+  >
+    <li>
+      <GatsbyLink
+        className="button"
+        to="/post"
+      >
+        Full Story
+      </GatsbyLink>
+    </li>
+  </ul>
+</article>
+`;

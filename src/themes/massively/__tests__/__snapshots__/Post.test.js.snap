@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Post /> should render correctly 1`] = `
+<div
+  id="main"
+>
+  <section
+    className="post"
+  >
+    <header
+      className="major"
+    >
+      <span
+        className="date"
+      >
+        YYYY-MM-DD
+      </span>
+      <h1>
+        Hello, world!
+      </h1>
+      <p>
+        Hello, world my name is lorem ipsum.
+      </p>
+    </header>
+    <p
+      className="blog-post-content"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
+    <Tags
+      list={
+        Array [
+          "nodejs",
+        ]
+      }
+    />
+    <div
+      className="pagination"
+    />
+  </section>
+</div>
+`;
