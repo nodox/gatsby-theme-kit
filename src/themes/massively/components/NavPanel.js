@@ -9,29 +9,34 @@ export default class NavPanel extends React.Component {
 
   closePanel(scrollToElement = false) {
     this.props.closePanelHandler()
-
-    // if (scrollToElement) {
-    //   // Scroll to a certain element
-    //   document.querySelector('.major').scrollIntoView({ 
-    //     behavior: 'smooth' 
-    //   });
-    // }
   }
 
   render() {
+
+    const links = this.props.links.paths.map((obj, idx) => {
+      return (
+        <li key={idx}>
+          <Link to={obj.path} onClick={() => this.closePanel() }>{obj.title}</Link>
+        </li>
+      );
+    });
+
+    const socialLinks = this.props.links.socialLinks.map((obj, idx) => {
+      return (
+        <li key={idx}>
+          <a href={obj.path} className={`icon fa-${obj.icon} alt`}><span className="label">{obj.name}</span></a>
+        </li>
+      );
+    });
+
     return (
       <div id="navPanel">
         <nav>
           <ul className="links">
-            <li><Link to="/" onClick={() => this.closePanel() }>Home</Link></li>
-            <li><Link to="/about" onClick={() => this.closePanel() }>About</Link></li>
-            <li><Link to="/speaking"onClick={() => this.closePanel() }>Speaking</Link></li>
-            <li><Link to="/contact" onClick={() => this.closePanel() }>Contact</Link></li>
+            {links}
           </ul>
           <ul className="icons alt">
-            <li><a href="https://www.twitter.com/stevennatera" className="icon fa-twitter alt"><span className="label">Twitter</span></a></li>
-            <li><a href="https://www.linkedin.com/in/snatera" className="icon fa-linkedin alt"><span className="label">Facebook</span></a></li>
-            <li><a href="https://www.github.com/nodox" className="icon fa-github alt"><span className="label">GitHub</span></a></li>
+            {socialLinks}
           </ul>
         </nav>
         <a href="#navPanel" className="close" onClick={() => this.closePanel() } style={{ WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)'}}></a>

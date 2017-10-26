@@ -18,63 +18,26 @@ import classNames from 'classnames';
 export default class Navbar extends React.Component {
   constructor(props) {
     super(props)
-
-    this.paths = [
-      {
-        path: '/',
-        title: 'Home',
-      },
-      {
-        path: '/about',
-        title: 'About'
-      }, 
-      {
-        path: '/speaking',
-        title: 'Speaking'
-      }, 
-      {
-        path: '/contact',
-        title: 'Contact'
-      },
-    ]
-
-    this.socialLinks = [
-      {
-        path: 'https://www.twitter.com/stevennatera',
-        icon: 'twitter',
-        name: 'Twitter',
-      },
-      {
-        path: 'https://www.linkedin.com/in/snatera',
-        icon: 'linkedin',
-        name: 'LinkedIn',
-      },
-      {
-        path: 'https://www.github.com/nodox',
-        icon: 'github',
-        name: 'Github',
-      }
-    ]
   }
 
   render() {
 
     const isActiveTab = (idx) => {
       let activeTab = classNames({
-        'active': this.paths[idx].path === this.props.currentPath
+        'active': this.props.links.paths[idx].path === this.props.currentPath
       });
       return activeTab;
     };
 
-    const links = this.paths.map((obj, idx) => {
+    const links = this.props.links.paths.map((obj, idx) => {
       return (
         <li key={idx} className={isActiveTab(idx)}>
           <Link to={obj.path}>{obj.title}</Link>
         </li>
       );
-    }); 
+    });
 
-    const socialLinks = this.socialLinks.map((obj, idx) => {
+    const socialLinks = this.props.links.socialLinks.map((obj, idx) => {
       return (
         <li key={idx}>
           <a href={obj.path} className={`icon fa-${obj.icon}`}><span className="label">{obj.name}</span></a>

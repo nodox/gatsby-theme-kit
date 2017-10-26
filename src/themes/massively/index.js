@@ -66,6 +66,50 @@ export default class Massively extends React.Component {
     var path = location.pathname;
     var text = this.getIntroDescription(path);
 
+
+    const copyright = {
+      owner: '© Steven Natera',
+    };
+
+
+    const links = {
+      paths: [
+        {
+          path: '/',
+          title: 'Home',
+        },
+        {
+          path: '/about',
+          title: 'About'
+        },
+        {
+          path: '/speaking',
+          title: 'Speaking'
+        },
+        {
+          path: '/contact',
+          title: 'Contact'
+        },
+      ],
+      socialLinks: [
+        {
+          path: 'https://www.twitter.com/stevennatera',
+          icon: 'twitter',
+          name: 'Twitter',
+        },
+        {
+          path: 'https://www.linkedin.com/in/snatera',
+          icon: 'linkedin',
+          name: 'LinkedIn',
+        },
+        {
+          path: 'https://www.github.com/nodox',
+          icon: 'github',
+          name: 'Github',
+        }
+      ]
+    }
+
     // Intro needs to be deleted except on the front page for
     // the header component to show on the mobile view of other pages
     return (
@@ -73,13 +117,13 @@ export default class Massively extends React.Component {
         <div id="wrapper" className="fade-in">
           <Intro description={text} />
           <Header />
-          <Navbar currentPath={path} />
+          <Navbar links={links} currentPath={path} />
             {this.props.children}
           <Footer />
-          <Copyright />
+          <Copyright data={copyright} />
           <div className="bg fixed" style={{ transform: 'none'}}></div>
           <a href="#navPanel" id="navPanelToggle" className="alt" onClick={() => this.openNavPanel()}>Menu</a>
-          <NavPanel closePanelHandler={this.closeNavPanel}/>
+          <NavPanel links={links} closePanelHandler={this.closeNavPanel}/>
         </div>
       </div>
     );
