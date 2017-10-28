@@ -24,7 +24,7 @@ describe('<PreviewPost />', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('should have a the right props', () => {
+  it('should have the right props', () => {
     expect(props).toHaveProperty('post');
     expect(props).toHaveProperty('post.excerpt');
 

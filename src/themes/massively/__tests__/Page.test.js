@@ -4,8 +4,8 @@ import Page from '../components/Page';
 
 describe('<Page />', () => {
   const data = {
-    desc: 'Hello World we need a description',
-    title: 'Steven Natera',
+    desc: 'Hello world we need a description',
+    title: 'Lorem ipsum',
   }
 
   const component = renderer.create(

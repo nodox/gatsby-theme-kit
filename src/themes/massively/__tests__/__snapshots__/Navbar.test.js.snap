@@ -17,6 +17,36 @@ exports[`<Navbar /> should render correctly 1`] = `
         Home
       </GatsbyLink>
     </li>
+    <li
+      className=""
+      key="1"
+    >
+      <GatsbyLink
+        to="/about"
+      >
+        About
+      </GatsbyLink>
+    </li>
+    <li
+      className=""
+      key="2"
+    >
+      <GatsbyLink
+        to="/speaking"
+      >
+        Speaking
+      </GatsbyLink>
+    </li>
+    <li
+      className=""
+      key="3"
+    >
+      <GatsbyLink
+        to="/contact"
+      >
+        Contact
+      </GatsbyLink>
+    </li>
   </ul>
   <ul
     className="icons"
@@ -32,6 +62,34 @@ exports[`<Navbar /> should render correctly 1`] = `
           className="label"
         >
           Twitter
+        </span>
+      </a>
+    </li>
+    <li
+      key="1"
+    >
+      <a
+        className="icon fa-linkedin"
+        href="https://www.linkedin.com/in/snatera"
+      >
+        <span
+          className="label"
+        >
+          LinkedIn
+        </span>
+      </a>
+    </li>
+    <li
+      key="2"
+    >
+      <a
+        className="icon fa-github"
+        href="https://www.github.com/nodox"
+      >
+        <span
+          className="label"
+        >
+          Github
         </span>
       </a>
     </li>

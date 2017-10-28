@@ -12,7 +12,7 @@ export default class Intro extends React.Component {
         <div className="img-container">
           <div className="img-size-sm img-intro img-circle"></div>
         </div>
-        <h1>Steven Natera</h1>
+        <h1>{this.props.name}</h1>
         <p>{this.props.description}</p>
         <ul className="actions">
           <li>

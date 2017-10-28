@@ -1,26 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Navbar from '../components/Navbar';
+import * as config from '../massivelyConfig';
 
 describe('<Navbar />', () => {
-  const links = {
-    paths: [
-      {
-        path: '/',
-        title: 'Home',
-      },
-    ],
-    socialLinks: [
-      {
-        path: 'https://www.twitter.com/stevennatera',
-        icon: 'fa-twitter',
-        name: 'Twitter',
-      },
-    ]
-  }
-
   const component = shallow(
-    <Navbar links={links} currentPath='/home' />
+    <Navbar links={config.initialLinks} currentPath='/home' />
   );
 
   const props = component.instance().props;
@@ -29,8 +14,10 @@ describe('<Navbar />', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('should have a the right props', () => {
+  it('should have the right props', () => {
     expect(props).toHaveProperty('links');
+    expect(props).toHaveProperty('links.paths');
+    expect(props).toHaveProperty('links.socialLinks');
     expect(props).toHaveProperty('currentPath');
   });
 

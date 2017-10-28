@@ -18,6 +18,36 @@ exports[`<NavPanel /> should render correctly 1`] = `
           Home
         </GatsbyLink>
       </li>
+      <li
+        key="1"
+      >
+        <GatsbyLink
+          onClick={[Function]}
+          to="/about"
+        >
+          About
+        </GatsbyLink>
+      </li>
+      <li
+        key="2"
+      >
+        <GatsbyLink
+          onClick={[Function]}
+          to="/speaking"
+        >
+          Speaking
+        </GatsbyLink>
+      </li>
+      <li
+        key="3"
+      >
+        <GatsbyLink
+          onClick={[Function]}
+          to="/contact"
+        >
+          Contact
+        </GatsbyLink>
+      </li>
     </ul>
     <ul
       className="icons alt"
@@ -33,6 +63,34 @@ exports[`<NavPanel /> should render correctly 1`] = `
             className="label"
           >
             Twitter
+          </span>
+        </a>
+      </li>
+      <li
+        key="1"
+      >
+        <a
+          className="icon fa-linkedin alt"
+          href="https://www.linkedin.com/in/snatera"
+        >
+          <span
+            className="label"
+          >
+            LinkedIn
+          </span>
+        </a>
+      </li>
+      <li
+        key="2"
+      >
+        <a
+          className="icon fa-github alt"
+          href="https://www.github.com/nodox"
+        >
+          <span
+            className="label"
+          >
+            Github
           </span>
         </a>
       </li>

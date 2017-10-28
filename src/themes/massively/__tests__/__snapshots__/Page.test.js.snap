@@ -11,7 +11,7 @@ exports[`<Page /> should render correctly 1`] = `
       className="major"
     >
       <h1>
-        Steven Natera
+        Lorem ipsum
       </h1>
     </header>
     <div
@@ -23,7 +23,7 @@ exports[`<Page /> should render correctly 1`] = `
       />
     </div>
     <p>
-      Hello World we need a description
+      Hello world we need a description
     </p>
   </section>
 </div>

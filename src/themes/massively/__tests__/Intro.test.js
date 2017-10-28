@@ -1,12 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Intro from '../components/Intro';
+import * as config from '../massivelyConfig';
 
 describe('<Intro />', () => {
-  const data = 'Steven Natera';
-
   const component = renderer.create(
-    <Intro description={data} />
+    <Intro name={config.name} description={config.name} />
   );
 
   const props = component.getInstance().props;
@@ -16,8 +15,9 @@ describe('<Intro />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('should have a the right props', () => {
+  it('should have the right props', () => {
     expect(props).toHaveProperty('description');
+    expect(props).toHaveProperty('name');
   });
 
 });

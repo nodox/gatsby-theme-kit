@@ -3,6 +3,15 @@ import React from 'react';
 export default class Footer extends React.Component {
 
   render() {
+
+    const socialLinks = this.props.navLinks.socialLinks.map((obj, idx) => {
+      return (
+        <li key={idx}>
+          <a href={obj.path} className={`icon ${obj.icon} alt`}><span className="label">{obj.name}</span></a>
+        </li>
+      );
+    });
+
     return (
       <footer id="footer">
         <section>
@@ -39,9 +48,7 @@ export default class Footer extends React.Component {
           <section>
             <h3>Social</h3>
             <ul className="icons alt">
-              <li><a href="https://www.twitter.com/stevennatera" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
-              <li><a href="https://www.linkedin.com/in/snatera" className="icon alt fa-linkedin"><span className="label">Facebook</span></a></li>
-              <li><a href="https://www.github.com/nodox" className="alt icon fa-github"><span className="label">GitHub</span></a></li>
+              {socialLinks}
             </ul>
           </section>
         </section>
@@ -49,10 +56,3 @@ export default class Footer extends React.Component {
     );
   }
 }
-
-
-
-
-
-
-

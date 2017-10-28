@@ -17,12 +17,18 @@ describe('<FeaturedPost />', () => {
     <FeaturedPost post={post} />
   );
 
+  const props = component.instance().props;
+
   it('should render correctly', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('should have more tests', () => {
-
+  it('should have the right props', () => {
+    expect(props).toHaveProperty('post.frontmatter');
+    expect(props).toHaveProperty('post.frontmatter.date');
+    expect(props).toHaveProperty('post.frontmatter.title');
+    expect(props).toHaveProperty('post.frontmatter.tags');
+    expect(props).toHaveProperty('post.frontmatter.path');
+    expect(props).toHaveProperty('post.excerpt');
   });
-
 });

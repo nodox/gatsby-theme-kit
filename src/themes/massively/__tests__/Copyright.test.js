@@ -1,28 +1,22 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Copyright from '../components/Copyright';
+import * as config from '../massivelyConfig';
 
 describe('<Copyright />', () => {
-  const data = {
-    owner: 'Steven Natera'
-  }
-
-  const component = renderer.create(
-    <Copyright data={data} />
+  const component = mount(
+    <Copyright data={config.copyright} />
   );
 
-  const props = component.getInstance().props;
+  const props = component.instance().props;
 
   it('should render correctly', () => {
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it('should have the right props', () => {
     expect(props).toHaveProperty('data');
-  });
-
-  it('should have a prop attribute of owner', () => {
     expect(props).toHaveProperty('data.owner');
   });
+
 });

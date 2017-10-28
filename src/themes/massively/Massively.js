@@ -80,9 +80,14 @@ export class Massively extends React.Component {
           links: config.initialLinks,
           currentPath: this.state.currentPathname
         });
+      } else if (child.type.name === 'Footer') {
+        return React.cloneElement(child, {
+          navLinks: config.initialLinks,
+        });
       } else if (child.type.name === 'Intro') {
         return React.cloneElement(child, {
-          description: this.getIntroDescription(pathname),
+          name: config.name,
+          description: config.introText[pathname],
         });
       } else {
         return child;
