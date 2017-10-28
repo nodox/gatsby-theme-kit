@@ -18,7 +18,7 @@ import './css/main.css';
 import './css/noscript.css';
 import './css/custom.css';
 
-export default class Massively extends React.Component {
+export class Massively extends React.Component {
   constructor() {
     super();
 

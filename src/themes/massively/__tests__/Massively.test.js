@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Massively from '../index';
+import { Massively } from '../Massively';
 // https://hackernoon.com/testing-react-components-with-jest-and-enzyme-41d592c174f
 
 describe('<Massively />', () => {
