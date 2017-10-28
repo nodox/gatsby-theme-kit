@@ -9,12 +9,8 @@ export default class Header extends React.Component {
   render() {
     return (
       <header id="header">
-        <Link to="/" className="logo">Steven Natera</Link>
+        <Link to="/" className="logo">{this.props.name}</Link>
       </header>
     );
   }
 }
-
-
-
-

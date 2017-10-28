@@ -1,4 +1,5 @@
 module.exports = {
+    name: 'Steven Natera',
     initialLinks: {
       paths: [
         {
