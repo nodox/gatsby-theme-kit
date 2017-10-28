@@ -4,21 +4,24 @@ import { Massively } from '../Massively';
 // https://hackernoon.com/testing-react-components-with-jest-and-enzyme-41d592c174f
 
 describe('<Massively />', () => {
-  const props = {
+  const data = {
     location: {
       path: '/post'
     }
   }
 
   const component = shallow(
-    <Massively props={props} />
+    <Massively data={data} />
   );
+
+  const props = component.instance().props;
 
   it('should render correctly', () => {
     expect(component).toMatchSnapshot();
   });
 
-  it('should have more tests', () => {
+  it('should have the right props', () => {
+    expect(props).toHaveProperty('data');
 
   });
 

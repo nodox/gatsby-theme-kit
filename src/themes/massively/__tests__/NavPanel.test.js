@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import NavPanel from '../components/NavPanel';
+import { NavPanel } from '../components/NavPanel';
 
 describe('<NavPanel />', () => {
   const links = {
@@ -13,14 +13,14 @@ describe('<NavPanel />', () => {
     socialLinks: [
       {
         path: 'https://www.twitter.com/stevennatera',
-        icon: 'twitter',
+        icon: 'fa-twitter',
         name: 'Twitter',
       },
     ]
   }
 
   const component = shallow(
-    <NavPanel links={links} />
+    <NavPanel navLinks={links} />
   );
 
   const props = component.instance().props;
@@ -30,7 +30,7 @@ describe('<NavPanel />', () => {
   });
 
   it('should have a the right props', () => {
-    expect(props).toHaveProperty('links');
+    expect(props).toHaveProperty('navLinks');
   });
 
 });

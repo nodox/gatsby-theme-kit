@@ -23,8 +23,3 @@ export default class Intro extends React.Component {
     );
   }
 }
-
-
-
-
-

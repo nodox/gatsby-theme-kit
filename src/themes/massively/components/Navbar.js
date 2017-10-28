@@ -21,15 +21,15 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-
+    const { links, currentPath } = this.props;
     const isActiveTab = (idx) => {
       let activeTab = classNames({
-        'active': this.props.links.paths[idx].path === this.props.currentPath
+        'active': links.paths[idx].path === currentPath
       });
       return activeTab;
     };
 
-    const links = this.props.links.paths.map((obj, idx) => {
+    const navLinks = links.paths.map((obj, idx) => {
       return (
         <li key={idx} className={isActiveTab(idx)}>
           <Link to={obj.path}>{obj.title}</Link>
@@ -37,10 +37,12 @@ export default class Navbar extends React.Component {
       );
     });
 
-    const socialLinks = this.props.links.socialLinks.map((obj, idx) => {
+    const socialLinks = links.socialLinks.map((obj, idx) => {
       return (
         <li key={idx}>
-          <a href={obj.path} className={`icon fa-${obj.icon}`}><span className="label">{obj.name}</span></a>
+          <a href={obj.path} className={`icon ${obj.icon}`}>
+            <span className="label">{obj.name}</span>
+          </a>
         </li>
       );
     });
@@ -48,7 +50,7 @@ export default class Navbar extends React.Component {
     return (
       <nav id="nav">
         <ul className="links">
-          {links}
+          {navLinks}
         </ul>
         <ul className="icons">
           {socialLinks}
@@ -56,5 +58,4 @@ export default class Navbar extends React.Component {
       </nav>
     );
   }
-
 }

@@ -13,7 +13,7 @@ describe('<Navbar />', () => {
     socialLinks: [
       {
         path: 'https://www.twitter.com/stevennatera',
-        icon: 'twitter',
+        icon: 'fa-twitter',
         name: 'Twitter',
       },
     ]

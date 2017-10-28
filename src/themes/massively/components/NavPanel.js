@@ -1,30 +1,24 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-export default class NavPanel extends React.Component {
-
-  constructor() {
-    super();
-  }
-
-  closePanel(scrollToElement = false) {
-    this.props.closePanelHandler()
+export class NavPanel extends React.Component {
+  constructor(props) {
+    super(props);
   }
 
   render() {
-
-    const links = this.props.links.paths.map((obj, idx) => {
+    const links = this.props.navLinks.paths.map((obj, idx) => {
       return (
         <li key={idx}>
-          <Link to={obj.path} onClick={() => this.closePanel() }>{obj.title}</Link>
+          <Link to={obj.path} onClick={() => this.props.closePanel() }>{obj.title}</Link>
         </li>
       );
     });
 
-    const socialLinks = this.props.links.socialLinks.map((obj, idx) => {
+    const socialLinks = this.props.navLinks.socialLinks.map((obj, idx) => {
       return (
         <li key={idx}>
-          <a href={obj.path} className={`icon fa-${obj.icon} alt`}><span className="label">{obj.name}</span></a>
+          <a href={obj.path} className={`icon ${obj.icon} alt`}><span className="label">{obj.name}</span></a>
         </li>
       );
     });
@@ -33,13 +27,16 @@ export default class NavPanel extends React.Component {
       <div id="navPanel">
         <nav>
           <ul className="links">
-            {links}
+          {links}
           </ul>
           <ul className="icons alt">
             {socialLinks}
           </ul>
         </nav>
-        <a href="#navPanel" className="close" onClick={() => this.closePanel() } style={{ WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)'}}></a>
+        <a href="#navPanel"
+        className="close"
+        onClick={() => this.props.closePanel() }
+        style={{ WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)'}}></a>
       </div>
     );
   }
