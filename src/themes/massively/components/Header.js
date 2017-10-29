@@ -7,9 +7,11 @@ export default class Header extends React.Component {
   }
 
   render() {
+    const { name } = this.props.config;
+
     return (
       <header id="header">
-        <Link to="/" className="logo">{this.props.name}</Link>
+        <Link to="/" className="logo">{name}</Link>
       </header>
     );
   }

@@ -17,13 +17,15 @@ import { Background } from '../themes/massively/components/Background';
 import { Massively } from '../themes/massively/Massively';
 
 export default class Template extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
+    const data = this.props;
+
     return (
-      <Massively data={this.props}>
+      <Massively data={data}>
         <Intro />
         <Header />
         <Navbar />

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Background /> should render correctly 1`] = `
+<Background>
+  <div
+    className="bg fixed"
+    style={
+      Object {
+        "transform": "none",
+      }
+    }
+  />
+</Background>
+`;

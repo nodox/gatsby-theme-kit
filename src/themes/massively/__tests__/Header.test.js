@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Header from '../components/Header';
-import * as config from '../massivelyConfig';
+import config from '../massivelyConfig';
 
 describe('<Header />', () => {
   const component = shallow(
-    <Header name={config.name} />
+    <Header config={config} />
   );
 
   const props = component.instance().props;
@@ -15,6 +15,7 @@ describe('<Header />', () => {
   });
 
   it('should have the right props', () => {
-    expect(props).toHaveProperty('name');
+    expect(props).toHaveProperty('config');
+    expect(props).toHaveProperty('config.name');
   });
 });

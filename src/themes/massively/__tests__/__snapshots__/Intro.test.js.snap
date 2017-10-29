@@ -15,9 +15,7 @@ exports[`<Intro /> should render correctly 1`] = `
   <h1>
     Steven Natera
   </h1>
-  <p>
-    Steven Natera
-  </p>
+  <p />
   <ul
     className="actions"
   >

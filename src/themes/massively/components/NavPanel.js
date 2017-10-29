@@ -7,7 +7,8 @@ export class NavPanel extends React.Component {
   }
 
   render() {
-    const links = this.props.navLinks.paths.map((obj, idx) => {
+    const { initialLinks } = this.props.config;
+    const links = initialLinks.paths.map((obj, idx) => {
       return (
         <li key={idx}>
           <Link to={obj.path} onClick={() => this.props.closePanel() }>{obj.title}</Link>
@@ -15,7 +16,7 @@ export class NavPanel extends React.Component {
       );
     });
 
-    const socialLinks = this.props.navLinks.socialLinks.map((obj, idx) => {
+    const socialLinks = initialLinks.socialLinks.map((obj, idx) => {
       return (
         <li key={idx}>
           <a href={obj.path} className={`icon ${obj.icon} alt`}><span className="label">{obj.name}</span></a>
@@ -27,16 +28,16 @@ export class NavPanel extends React.Component {
       <div id="navPanel">
         <nav>
           <ul className="links">
-          {links}
+            {links}
           </ul>
           <ul className="icons alt">
             {socialLinks}
           </ul>
         </nav>
-        <a href="#navPanel"
+        <span
         className="close"
         onClick={() => this.props.closePanel() }
-        style={{ WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)'}}></a>
+        style={{ WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)'}}></span>
       </div>
     );
   }

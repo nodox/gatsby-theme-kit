@@ -96,9 +96,8 @@ exports[`<NavPanel /> should render correctly 1`] = `
       </li>
     </ul>
   </nav>
-  <a
+  <span
     className="close"
-    href="#navPanel"
     onClick={[Function]}
     style={
       Object {

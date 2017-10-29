@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Footer from '../components/Footer';
-import * as config from '../massivelyConfig';
+import config from '../massivelyConfig';
 
 describe('<Footer />', () => {
   const component = mount(
-    <Footer navLinks={config.initialLinks}/>
+    <Footer config={config} />
   );
   const props = component.instance().props;
 
@@ -14,8 +14,9 @@ describe('<Footer />', () => {
   });
 
   it('should have the right props', () => {
-    expect(props).toHaveProperty('navLinks');
-    expect(props).toHaveProperty('navLinks.socialLinks');
+    expect(props).toHaveProperty('config');
+    expect(props).toHaveProperty('config.initialLinks');
+    expect(props).toHaveProperty('config.initialLinks.socialLinks');
   });
 
 });

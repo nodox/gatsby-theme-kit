@@ -2,9 +2,55 @@
 
 exports[`<Copyright /> should render correctly 1`] = `
 <Copyright
-  data={
+  config={
     Object {
-      "owner": "© Steven Natera",
+      "copyright": Object {
+        "owner": "© Steven Natera",
+      },
+      "initialLinks": Object {
+        "paths": Array [
+          Object {
+            "path": "/",
+            "title": "Home",
+          },
+          Object {
+            "path": "/about",
+            "title": "About",
+          },
+          Object {
+            "path": "/speaking",
+            "title": "Speaking",
+          },
+          Object {
+            "path": "/contact",
+            "title": "Contact",
+          },
+        ],
+        "socialLinks": Array [
+          Object {
+            "icon": "fa-twitter",
+            "name": "Twitter",
+            "path": "https://www.twitter.com/stevennatera",
+          },
+          Object {
+            "icon": "fa-linkedin",
+            "name": "LinkedIn",
+            "path": "https://www.linkedin.com/in/snatera",
+          },
+          Object {
+            "icon": "fa-github",
+            "name": "Github",
+            "path": "https://www.github.com/nodox",
+          },
+        ],
+      },
+      "introText": Object {
+        "/": "Hi! I'm Steven Natera. I write this blog, teach software engineering workshops, and explore emerging technologies.",
+        "/about": "Hi! I'm Steven Natera. I write this blog, teach software engineering workshops, and explore emerging technologies.",
+        "/contact": "I'm pretty easy to get hold of, here's how I use different channels to communicate with people and how best to contact me",
+        "/speaking": "I deliver talks on NodeJS and I teach software engineering workshops.",
+      },
+      "name": "Steven Natera",
     }
   }
 >

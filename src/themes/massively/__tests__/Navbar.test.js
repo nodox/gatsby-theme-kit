@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Navbar from '../components/Navbar';
-import * as config from '../massivelyConfig';
+import config from '../massivelyConfig';
 
 describe('<Navbar />', () => {
   const component = shallow(
-    <Navbar links={config.initialLinks} currentPath='/home' />
+    <Navbar config={config} currentPath='/home' />
   );
 
   const props = component.instance().props;
@@ -15,9 +15,9 @@ describe('<Navbar />', () => {
   });
 
   it('should have the right props', () => {
-    expect(props).toHaveProperty('links');
-    expect(props).toHaveProperty('links.paths');
-    expect(props).toHaveProperty('links.socialLinks');
+    expect(props).toHaveProperty('config');
+    expect(props).toHaveProperty('config.initialLinks.paths');
+    expect(props).toHaveProperty('config.initialLinks.socialLinks');
     expect(props).toHaveProperty('currentPath');
   });
 

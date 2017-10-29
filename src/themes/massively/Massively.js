@@ -13,7 +13,7 @@ import Pagination from './components/Pagination';
 import Post from './components/Post';
 import { NavPanel } from './components/NavPanel';
 import { MenuButton } from './components/MenuButton';
-import * as config from './massivelyConfig';
+import config from './massivelyConfig';
 
 import './css/font-awesome.min.css';
 import './css/main.css';
@@ -25,7 +25,8 @@ export class Massively extends React.Component {
     super(props);
     this.state = {
       isPanelVisible: false,
-      currentPathname: this.props.data.location.pathname
+      currentPath: this.props.data.location.pathname,
+      config: config,
     };
   }
 
@@ -49,49 +50,23 @@ export class Massively extends React.Component {
     const { pathname } = nextProps.data.location;
     this.setState((prevState, props) => {
       return {
-        currentPathname: pathname
+        currentPath: pathname
       };
     });
   }
 
   render() {
-    const { pathname } = this.props.data.location;
-
     let isVisible = classNames({
       'is-navPanel-visible': this.state.isPanelVisible
     });
 
     const children = React.Children.map(this.props.children, child => {
-      if (child.type.name === 'NavPanel') {
-        return React.cloneElement(child, {
-          navLinks: config.initialLinks,
-          closePanel: () => this.closePanel(),
-        });
-      } else if (child.type.name === 'MenuButton') {
-        return React.cloneElement(child, {
-          openPanel: () => this.openPanel(),
-        });
-      } else if (child.type.name === 'Copyright') {
-        return React.cloneElement(child, {
-          data: config.copyright,
-        });
-      } else if (child.type.name === 'Navbar') {
-        return React.cloneElement(child, {
-          links: config.initialLinks,
-          currentPath: this.state.currentPathname
-        });
-      } else if (child.type.name === 'Footer') {
-        return React.cloneElement(child, {
-          navLinks: config.initialLinks,
-        });
-      } else if (child.type.name === 'Intro') {
-        return React.cloneElement(child, {
-          name: config.name,
-          description: config.introText[pathname],
-        });
-      } else {
-        return child;
-      }
+      return React.cloneElement(child, {
+        currentPath: this.state.currentPath,
+        config: this.state.config,
+        closePanel: () => this.closePanel(),
+        openPanel: () => this.openPanel(),
+      });
     });
 
     return (

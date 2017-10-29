@@ -21,23 +21,18 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    const { links, currentPath } = this.props;
-    const isActiveTab = (idx) => {
-      let activeTab = classNames({
-        'active': links.paths[idx].path === currentPath
-      });
-      return activeTab;
-    };
+    const { currentPath } = this.props;
+    const { initialLinks } = this.props.config;
 
-    const navLinks = links.paths.map((obj, idx) => {
+    const navLinks = initialLinks.paths.map((obj, idx) => {
       return (
-        <li key={idx} className={isActiveTab(idx)}>
+        <li key={idx} className={obj.path === currentPath ? 'active' : ''}>
           <Link to={obj.path}>{obj.title}</Link>
         </li>
       );
     });
 
-    const socialLinks = links.socialLinks.map((obj, idx) => {
+    const socialLinks = initialLinks.socialLinks.map((obj, idx) => {
       return (
         <li key={idx}>
           <a href={obj.path} className={`icon ${obj.icon}`}>
