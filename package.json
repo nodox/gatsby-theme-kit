@@ -34,7 +34,9 @@
     "nightwatch": "^0.9.16",
     "prettier": "~1.7.2",
     "react-test-renderer": "^16.0.0",
-    "selenium-download": "^2.0.10"
+    "selenium-download": "^2.0.10",
+    "selenium-server-standalone-jar": "^3.6.0",
+    "selenium-webdriver": "^3.6.0"
   },
   "keywords": [
     "gatsby"
