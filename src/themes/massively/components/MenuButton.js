@@ -8,10 +8,10 @@ export class MenuButton extends React.Component {
 
   render() {
     return (
-      <a href="#navPanel"
+      <span
         id="navPanelToggle"
         className="alt"
-        onClick={() => this.props.openPanel()}>Menu</a>
+        onClick={() => this.props.openPanel()}>Menu</span>
     );
   }
 }

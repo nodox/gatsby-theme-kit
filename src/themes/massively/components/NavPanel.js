@@ -34,10 +34,9 @@ export class NavPanel extends React.Component {
             {socialLinks}
           </ul>
         </nav>
-        <span
+        <span id="navPanelCloseBtn"
         className="close"
-        onClick={() => this.props.closePanel() }
-        style={{ WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)'}}></span>
+        onClick={() => this.props.closePanel() }><i className="fa fa-times" aria-hidden="true"></i></span>
       </div>
     );
   }

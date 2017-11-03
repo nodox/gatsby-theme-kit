@@ -98,12 +98,13 @@ exports[`<NavPanel /> should render correctly 1`] = `
   </nav>
   <span
     className="close"
+    id="navPanelCloseBtn"
     onClick={[Function]}
-    style={
-      Object {
-        "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-      }
-    }
-  />
+  >
+    <i
+      aria-hidden="true"
+      className="fa fa-times"
+    />
+  </span>
 </div>
 `;

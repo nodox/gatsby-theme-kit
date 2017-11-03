@@ -4431,7 +4431,6 @@
       }
 
       #navPanel .close:before {
-        content: '\f00d';
         font-size: 1.25rem;
       }
 
