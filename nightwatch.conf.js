@@ -11,17 +11,26 @@ const CHROME_BINARY_PATH = () => {
   const travis_path = "google-chrome-stable";
   return process.env === 'travis' ? 'travis_path' : 'local_path';
 }
-
+// https://stackoverflow.com/questions/24550376/chrome-not-reachable-on-travis-ci
 module.exports = {
-  "src_folders" : ["e2e"],
+  "src_folders" : ["src/themes/massively/__e2e__"],
   "output_folder" : "reports",
+  // "test_runner" : {
+  //   "type" : "mocha",
+  //   "options" : {
+  //     "ui" : "bdd",
+  //     "reporter" : "list"
+  //   }
+  // },
 
   "selenium" : {
     "start_process" : true,
     "server_path": jar.path,
+    "live_output": true,
     "port" : 4444,
     "cli_args" : {
       "webdriver.chrome.driver" : BINPATH + "chromedriver",
+      //"webdriver.gecko.driver" : BINPATH + "geckodriver"
     }
   },
 
@@ -46,6 +55,10 @@ module.exports = {
         "chromeOptions": {
           "args": [
             "--headless",
+            "--no-sandbox",
+            "--no-default-browser-check",
+            "--no-first-run",
+            "--disable-default-apps"
           ],
           "binary": CHROME_BINARY_PATH
         },

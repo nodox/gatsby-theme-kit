@@ -7,7 +7,11 @@ addons:
   chrome: stable
 install:
   - npm install
+before_script:
+  - gatsby build
+  - gatsby serve & # start a Web server
+  - sleep 3 # give Web server some time to bind to sockets, etc
 script:
-  - npm test
+  - npm run test
   - npm run test:e2e
 sudo: false
