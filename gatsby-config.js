@@ -12,15 +12,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages`,
         name: 'pages',
+        path: `${__dirname}/content`,
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-sass`,
       options: {
-        trackingId: 'UA-108082814-1',
-      },
+        precision: 8,
+      }
     },
     {
       resolve: 'gatsby-transformer-remark',

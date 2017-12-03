@@ -11,36 +11,29 @@ const CHROME_BINARY_PATH = () => {
   const travis_path = "google-chrome-stable";
   return process.env === 'travis' ? 'travis_path' : 'local_path';
 }
+// load up the themes from the jay-config for where to find the e2e tests!
+
 // https://stackoverflow.com/questions/24550376/chrome-not-reachable-on-travis-ci
 module.exports = {
-  "src_folders" : ["src/themes/massively/__e2e__"],
-  "output_folder" : "reports",
-  // "test_runner" : {
-  //   "type" : "mocha",
-  //   "options" : {
-  //     "ui" : "bdd",
-  //     "reporter" : "list"
-  //   }
-  // },
-
-  "selenium" : {
-    "start_process" : true,
-    "server_path": jar.path,
-    "live_output": true,
-    "port" : 4444,
-    "cli_args" : {
+  "src_folders": ["src/__e2e__"],
+  "output_folder": "reports",
+  "selenium": {
+    // "start_process": true,
+    // "server_path": jar.path,
+    // "live_output": true,
+    "port": 4444,
+    "cli_args": {
       "webdriver.chrome.driver" : BINPATH + "chromedriver",
-      //"webdriver.gecko.driver" : BINPATH + "geckodriver"
     }
   },
 
-  "test_workers" : {
+  "test_workers": {
     "enabled": true,
     "workers": "auto"
-  }, // perform tests in parallel where possible
+  }, 
 
-  "test_settings" : {
-    "default" : {
+  "test_settings": {
+    "default": {
       "launch_url": "http://localhost",
       "screenshots": {
         "enabled": false, // if you want to keep screenshots
@@ -54,7 +47,7 @@ module.exports = {
         "browserName": "chrome",
         "chromeOptions": {
           "args": [
-            "--headless",
+            // "--headless",
             "--no-sandbox",
             "--no-default-browser-check",
             "--no-first-run",

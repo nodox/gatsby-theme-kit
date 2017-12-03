@@ -1,12 +1,23 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Post from '../themes/massively/components/Post';
+import Link from 'gatsby-link';
+
 
 export default function Template({ data, pathContext }) {
-  const { markdownRemark: post } = data;
-  const { next, prev } = pathContext;
+  const { markdownRemark } = data;
+  const {
+    frontmatter,
+    html,
+  } = markdownRemark;
+
   return (
-    <Post post={post} next={next} prev={prev} />
+    <div>
+      <p
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+      <Link to="/">Home</Link>
+    </div>
+
   );
 }
 
@@ -17,7 +28,6 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
-        tags
         title
       }
     }
