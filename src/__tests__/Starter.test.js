@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Tags from '../components/Tags';
+import { Starter } from '../components/Starter';
 
-describe('<Tags />', () => {
-  const component = shallow(
-    <Tags />
+describe('<Starter />', () => {
+  const component = mount(
+    <Starter />
   );
 
   it('should render correctly', () => {
