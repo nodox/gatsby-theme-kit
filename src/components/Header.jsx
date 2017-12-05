@@ -1,36 +1,40 @@
 import React from 'react';
 
-export function Header() {
+export class Header extends React.Component{
 
-  const toggleModal = (event, name) => {
-    event.preventDefault();
-    // if (condition) {
-    //
-    // }
-
-    // console.log('name', name);
+  constructor(props) {
+    super(props);
   }
 
-  return (
-    <header id="header">
-      <div class="logo">
-        <span class="icon fa-diamond"></span>
-      </div>
-      <div class="content">
-        <div class="inner">
-          <h1>Dimension</h1>
-          <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-          for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+  // componentDidMount() {
+  //
+  // }
+
+
+  render() {
+    return (
+      <header id="header">
+        <div className="logo">
+          <span className="icon fa-diamond"></span>
         </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a onClick={ (event) => toggleModal(event, 'intro')}>Intro</a></li>
-          <li><a onClick={ (event) => toggleModal(event, 'work')}>Work</a></li>
-          <li><a onClick={ (event) => toggleModal(event, 'about')}>About</a></li>
-          <li><a onClick={ (event) => toggleModal(event, 'contact')}>Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-  );
+        <div className="content">
+          <div className="inner">
+            <h1>Dimension</h1>
+            <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
+            for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#intro" onClick={() => this.props.transitionHandler('intro')}>Intro</a></li>
+            <li><a href="#work" onClick={() => this.props.transitionHandler('work')}>Work</a></li>
+            <li><a href="#about" onClick={() => this.props.transitionHandler('about')}>About</a></li>
+            <li><a href="#contact" onClick={() => this.props.transitionHandler('contact')}>Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    );
+  }
+
+
 }
