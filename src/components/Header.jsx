@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 export class Header extends React.Component{
 
@@ -6,14 +7,18 @@ export class Header extends React.Component{
     super(props);
   }
 
-  // componentDidMount() {
-  //
-  // }
-
 
   render() {
+    var headerClass = classNames({
+      'dimensions-hide': !this.props.class,
+    });
+
+    var headerId = classNames({
+      'header': this.props.class,
+    });
+
     return (
-      <header id="header">
+      <header id={headerId} className={headerClass}>
         <div className="logo">
           <span className="icon fa-diamond"></span>
         </div>
