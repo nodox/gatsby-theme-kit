@@ -19,7 +19,7 @@ export default class Index extends React.Component {
       openModal: null,
       header: true,
       main: true,
-      intro: false,
+      footer: true,
       modal: {
         intro: false,
         work: false,
@@ -32,26 +32,27 @@ export default class Index extends React.Component {
   startArticleTransition(name) {
     document.body.classList.add('is-article-visible');
 
-    console.log(name);
-
     this.setState({
       header: false,
       footer: false,
       main: true,
-      intro: true,
+      modal: {
+        [name]: true,
+      },
     });
   }
 
-  endArticleTransition() {
+  endArticleTransition(name) {
     document.body.classList.remove('is-article-visible');
 
     this.setState({
       header: true,
       footer: true,
       main: false,
-      intro: false,
+      modal: {
+        [name]: false
+      },
     });
-
   }
 
   render() {
@@ -77,7 +78,10 @@ export default class Index extends React.Component {
     			<div id="wrapper">
             <Header class={this.state.header} transitionHandler={(name) => this.startArticleTransition(name)}/>
     					<div id={mainId} className={mainClass}>
-                <Intro class={this.state.intro} endTransitionHandler={() => this.endArticleTransition()} />
+                <Intro class={this.state.modal.intro} endTransitionHandler={(name) => this.endArticleTransition(name)} />
+                <Work class={this.state.modal.work} endTransitionHandler={(name) => this.endArticleTransition(name)} />
+                <About class={this.state.modal.about} endTransitionHandler={(name) => this.endArticleTransition(name)} />
+                <Contact class={this.state.modal.contact} endTransitionHandler={(name) => this.endArticleTransition(name)} />
               </div>
     					<footer id={footerId} className={footerClass}>
     						<p className="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
