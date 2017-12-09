@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import image_0 from '../images';
-import image_1 from '../images';
-import image_2 from '../images';
-import image_3 from '../images';
-import image_4 from '../images';
-import image_5 from '../images';
+import image_0 from '../images/pic01.jpg';
+import image_1 from '../images/pic02.jpg';
+import image_2 from '../images/pic03.jpg';
+import image_3 from '../images/pic04.jpg';
+import image_4 from '../images/pic05.jpg';
+import image_5 from '../images/pic06.jpg';
 
 import '../styles/main.scss';
 
