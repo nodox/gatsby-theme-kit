@@ -55,7 +55,7 @@
 			}
 		}
 
-		body.fullscreen & {
+		.body.fullscreen & {
 			visibility: hidden;
 
 			@if _misc(main-side) == 'left' {
@@ -80,7 +80,7 @@
 		@include breakpoint(large) {
 			width: _size(main-alt);
 
-			body.fullscreen & {
+			.body.fullscreen & {
 				@if _misc(main-side) == 'left' {
 					left: (_size(main-alt) * -1);
 				}
@@ -109,7 +109,7 @@
 				right: auto !important;
 			}
 
-			body.fullscreen & {
+			.body.fullscreen & {
 				left: auto !important;
 				right: auto !important;
 				opacity: 0;

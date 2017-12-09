@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
+import classNames from 'classnames';
 import '../styles/main.scss';
 
 import image_fulls_0 from '../images/fulls/01.jpg';
@@ -15,7 +16,6 @@ import image_fulls_8 from '../images/fulls/09.jpg';
 import image_fulls_9 from '../images/fulls/10.jpg';
 import image_fulls_10 from '../images/fulls/11.jpg';
 import image_fulls_11 from '../images/fulls/12.jpg';
-
 
 import image_thumbs_0 from '../images/thumbs/01.jpg';
 import image_thumbs_1 from '../images/thumbs/02.jpg';
@@ -55,15 +55,40 @@ export default class Index extends React.Component {
     this.state = {
       currentImg: image_thumbs_1,
       currentIdx: 1,
-
+      fullscreen: false,
     }
   }
 
-  setCurrentImageAndIdx(path, pos) {
+  toggleFullscreen() {
     this.setState({
-      currentImg: path,
-      currentIdx: pos,
-    })
+      fullscreen: !this.state.fullscreen,
+    });
+  }
+
+
+  enterFullscreen() {
+    this.setState({
+      fullscreen: true,
+    });
+  }
+
+  setCurrentImageAndIdx(path, pos) {
+
+
+    this.setState((prevState, props) => {
+      if (window.screen.width < 480) {
+        return {
+          currentImg: path,
+          currentIdx: pos,
+          fullscreen: true,
+        }
+      }
+
+      return {
+        currentImg: path,
+        currentIdx: pos,
+      }
+    });
   }
 
   getNextImage() {
@@ -102,6 +127,11 @@ export default class Index extends React.Component {
 
   render() {
 
+    var bodyClasses = classNames({
+      'body': true,
+      'fullscreen': this.state.fullscreen,
+    });
+
     const articles = this.thumb_imgs.map((obj, idx) => {
       var pos = idx++;
 
@@ -116,12 +146,12 @@ export default class Index extends React.Component {
 
     return (
 
-  		<div>
+  		<div className={bodyClasses}>
         <div id="viewer">
           <div className="inner">
             <div onClick={() => this.getNextImage()} className="nav-next"></div>
             <div onClick={() => this.getPrevImage()} className="nav-previous"></div>
-            <div className="toggle"></div>
+            <div onClick={() => this.toggleFullscreen()} className="toggle menuIcon"></div>
           </div>
           <div className="slide active">
             <div className="caption">
@@ -157,6 +187,7 @@ export default class Index extends React.Component {
   						<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
   					</ul>
   				</footer>
+          <div onClick={() => this.enterFullscreen()} className="toggle closeIcon"></div>
         </div>
 
   		</div>

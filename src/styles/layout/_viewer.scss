@@ -178,7 +178,7 @@
 			}
 		}
 
-		body.fullscreen & {
+		.body.fullscreen & {
 			width: 100%;
 
 			.inner {
@@ -220,7 +220,7 @@
 				}
 			}
 
-			body.fullscreen & {
+			.body.fullscreen & {
 				.inner {
 					.toggle {
 						opacity: 1;
@@ -242,7 +242,7 @@
 				}
 			}
 
-			body.fullscreen & {
+			.body.fullscreen & {
 				.inner {
 					.toggle {
 						background-image: url('../images/open-small.svg');
@@ -263,7 +263,7 @@
 				}
 			}
 
-			body.fullscreen & {
+			.body.fullscreen & {
 				@include vendor('transition-delay', '#{_duration(layout-alt)}');
 				opacity: 1;
 			}
