@@ -7,6 +7,7 @@ import image_2 from '../images/pic03.jpg';
 import image_3 from '../images/pic04.jpg';
 import image_4 from '../images/pic05.jpg';
 import image_5 from '../images/pic06.jpg';
+import image_6 from '../images/pic07.jpg';
 
 import '../styles/main.scss';
 
@@ -15,30 +16,30 @@ export default function Index({ data }) {
   return (
     <div>
 
-  			<section id="header" class="dark">
+  			<section id="header" className="dark">
   				<header>
   					<h1>Welcome to Tessellate</h1>
   					<p>A free responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
   				</header>
   				<footer>
-  					<a href="#first" class="button scrolly">Proceed to second phase</a>
+  					<a href="#first" className="button scrolly">Proceed to second phase</a>
   				</footer>
   			</section>
 
-  			<section id="first" class="main">
+  			<section id="first" className="main">
   				<header>
-  					<div class="container">
+  					<div className="container">
   						<h2>Tessellate is a free responsive site template</h2>
   						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
   						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
   					</div>
   				</header>
-  				<div class="content dark style1 featured">
-  					<div class="container">
-  						<div class="row">
-  							<div class="4u 12u(narrow)">
+  				<div className="content dark style1 featured">
+  					<div className="container">
+  						<div className="row">
+  							<div className="4u 12u(narrow)">
   								<section>
-  									<span class="feature-icon"><span class="icon fa-clock-o"></span></span>
+  									<span className="feature-icon"><span className="icon fa-clock-o"></span></span>
   									<header>
   										<h3>Gravida</h3>
   									</header>
@@ -48,9 +49,9 @@ export default function Index({ data }) {
   									accumsan vivamus.</p>
   								</section>
   							</div>
-  							<div class="4u 12u(narrow)">
+  							<div className="4u 12u(narrow)">
   								<section>
-  									<span class="feature-icon"><span class="icon fa-bolt"></span></span>
+  									<span className="feature-icon"><span className="icon fa-bolt"></span></span>
   									<header>
   										<h3>Vivamus</h3>
   									</header>
@@ -60,9 +61,9 @@ export default function Index({ data }) {
   									accumsan vivamus.</p>
   								</section>
   							</div>
-  							<div class="4u 12u(narrow)">
+  							<div className="4u 12u(narrow)">
   								<section>
-  									<span class="feature-icon"><span class="icon fa-cloud"></span></span>
+  									<span className="feature-icon"><span className="icon fa-cloud"></span></span>
   									<header>
   										<h3>Accumsan</h3>
   									</header>
@@ -73,10 +74,10 @@ export default function Index({ data }) {
   								</section>
   							</div>
   						</div>
-  						<div class="row">
-  							<div class="12u">
+  						<div className="row">
+  							<div className="12u">
   								<footer>
-  									<a href="#second" class="button scrolly">Gravida tempor lacinia</a>
+  									<a href="#second" className="button scrolly">Gravida tempor lacinia</a>
   								</footer>
   							</div>
   						</div>
@@ -84,18 +85,18 @@ export default function Index({ data }) {
   				</div>
   			</section>
 
-  			<section id="second" class="main">
+  			<section id="second" className="main">
   				<header>
-  					<div class="container">
+  					<div className="container">
   						<h2>Euismod sed feugiat lorem tempus magna</h2>
   						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
   						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
   					</div>
   				</header>
-  				<div class="content dark style2">
-  					<div class="container">
-  						<div class="row">
-  							<div class="4u 12u(narrow)">
+  				<div className="content dark style2">
+  					<div className="container">
+  						<div className="row">
+  							<div className="4u 12u(narrow)">
   								<section>
   									<h3>Augue vivamus sed ipsum commodo lorem dolor</h3>
   									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
@@ -107,18 +108,18 @@ export default function Index({ data }) {
   									accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
   									euismod lorem ipsum dolor.</p>
   									<footer>
-  										<a href="#third" class="button scrolly">Accumsan nisi tempor</a>
+  										<a href="#third" className="button scrolly">Accumsan nisi tempor</a>
   									</footer>
   								</section>
   							</div>
-  							<div class="8u 12u(narrow)">
-  								<div class="row">
-  									<div class="6u"><a href="#" class="image fit"><img src={image_0} alt="" /></a></div>
-  									<div class="6u"><a href="#" class="image fit"><img src={image_1} alt="" /></a></div>
-  									<div class="6u"><a href="#" class="image fit"><img src={image_2} alt="" /></a></div>
-  									<div class="6u"><a href="#" class="image fit"><img src={image_3} alt="" /></a></div>
-  									<div class="6u"><a href="#" class="image fit"><img src={image_4} alt="" /></a></div>
-  									<div class="6u"><a href="#" class="image fit"><img src={image_5} alt="" /></a></div>
+  							<div className="8u 12u(narrow)">
+  								<div className="row">
+  									<div className="6u"><a href="#" className="image fit"><img src={image_0} alt="" /></a></div>
+  									<div className="6u"><a href="#" className="image fit"><img src={image_1} alt="" /></a></div>
+  									<div className="6u"><a href="#" className="image fit"><img src={image_2} alt="" /></a></div>
+  									<div className="6u"><a href="#" className="image fit"><img src={image_3} alt="" /></a></div>
+  									<div className="6u"><a href="#" className="image fit"><img src={image_4} alt="" /></a></div>
+  									<div className="6u"><a href="#" className="image fit"><img src={image_5} alt="" /></a></div>
   								</div>
   							</div>
   						</div>
@@ -126,19 +127,19 @@ export default function Index({ data }) {
   				</div>
   			</section>
 
-  			<section id="third" class="main">
+  			<section id="third" className="main">
   				<header>
-  					<div class="container">
+  					<div className="container">
   						<h2>Ornare varius lorem ipsum ante lectus</h2>
   						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
   						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
   					</div>
   				</header>
-  				<div class="content dark style3">
-  					<div class="container">
-  						<span class="image featured"><img src="images/pic07.jpg" alt="" /></span>
-  						<div class="row">
-  							<div class="4u 12u(narrow)">
+  				<div className="content dark style3">
+  					<div className="container">
+  						<span className="image featured"><img src={image_6} alt="" /></span>
+  						<div className="row">
+  							<div className="4u 12u(narrow)">
   								<h3>Diam vivamus turpis lorem sodales lectus ornare</h3>
   								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
   								tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
@@ -151,7 +152,7 @@ export default function Index({ data }) {
   								gravida dolore euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu
   								eget ornare et magna.</p>
   							</div>
-  							<div class="4u 12u(narrow)">
+  							<div className="4u 12u(narrow)">
   								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
   								tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
   								vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
@@ -164,7 +165,7 @@ export default function Index({ data }) {
   								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
   								accumsan vivamus augue cubilia.</p>
   							</div>
-  							<div class="4u 12u(narrow)">
+  							<div className="4u 12u(narrow)">
   								<p>Placerat lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
   								lacinia eget ornare varius gravida. Gravida dis placerat lectus ante vel nunc
   								euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus augue
@@ -175,7 +176,7 @@ export default function Index({ data }) {
   								dolore euismod lorem ipsum dolor sit amet conseismod lorem ipsum dolor sit amet
   								consequat lorem ipsum consequat feugiat sed tempus euismod feugiat veroeros.</p>
   								<footer>
-  									<a href="#fourth" class="button scrolly">Ipsum ornare lorem dolor</a>
+  									<a href="#fourth" className="button scrolly">Ipsum ornare lorem dolor</a>
   								</footer>
   							</div>
   						</div>
@@ -183,29 +184,29 @@ export default function Index({ data }) {
   				</div>
   			</section>
 
-  			<section id="fourth" class="main">
+  			<section id="fourth" className="main">
   				<header>
-  					<div class="container">
+  					<div className="container">
   						<h2>Sed feugiat ipsum consequat</h2>
   						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
   						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
   					</div>
   				</header>
-  				<div class="content style4 featured">
-  					<div class="container 75%">
+  				<div className="content style4 featured">
+  					<div className="container 75%">
   						<form method="post" action="#">
-  							<div class="row 50%">
-  								<div class="6u 12u(mobile)"><input type="text" placeholder="Name" /></div>
-  								<div class="6u 12u(mobile)"><input type="text" placeholder="Email" /></div>
+  							<div className="row 50%">
+  								<div className="6u 12u(mobile)"><input type="text" placeholder="Name" /></div>
+  								<div className="6u 12u(mobile)"><input type="text" placeholder="Email" /></div>
   							</div>
-  							<div class="row 50%">
-  								<div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
+  							<div className="row 50%">
+  								<div className="12u"><textarea name="message" placeholder="Message"></textarea></div>
   							</div>
-  							<div class="row">
-  								<div class="12u">
-  									<ul class="actions">
-  										<li><input type="submit" class="button" value="Send Message" /></li>
-  										<li><input type="reset" class="button alt" value="Clear Form" /></li>
+  							<div className="row">
+  								<div className="12u">
+  									<ul className="actions">
+  										<li><input type="submit" className="button" value="Send Message" /></li>
+  										<li><input type="reset" className="button alt" value="Clear Form" /></li>
   									</ul>
   								</div>
   							</div>
@@ -215,15 +216,15 @@ export default function Index({ data }) {
   			</section>
 
   			<section id="footer">
-  				<ul class="icons">
-  					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-  					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-  					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-  					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-  					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+  				<ul className="icons">
+  					<li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+  					<li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
+  					<li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+  					<li><a href="#" className="icon fa-dribbble"><span className="label">Dribbble</span></a></li>
+  					<li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
   				</ul>
-  				<div class="copyright">
-  					<ul class="menu">
+  				<div className="copyright">
+  					<ul className="menu">
   						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
   					</ul>
   				</div>
