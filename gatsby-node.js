@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+  const blogPostTemplate = path.resolve(`src/templates/post.js`);
   return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
