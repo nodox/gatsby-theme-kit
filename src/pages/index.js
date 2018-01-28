@@ -1,15 +1,42 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import { Starter } from '../components/Starter';
+import PreviewPost from '../components/PreviewPost';
 
 export default function Index({ data }) {
+  const { edges: posts } = data.allMarkdownRemark;
 
   return (
     <div>
-      <h1>Hello World!</h1>
-      <Starter />
-      <Link to="/start">Start</Link>
+      <div id="main">
+      <section className="posts">
+        {posts
+          .filter(post => post.node.frontmatter.title.length > 0)
+          .map(({ node: post }) => {
+            return (
+              <PreviewPost key={post.id} post={post} />
+            );
+          })}
+        </section>
+      </div>
     </div>
   );
 }
+
+export const pageQuery = graphql`
+  query MassivelyIndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+          }
+        }
+      }
+    }
+  }
+`;

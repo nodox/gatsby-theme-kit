@@ -6,6 +6,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "gatsby": "~1.9.45",
+    "gatsby-jay": "^0.1.2",
     "gatsby-link": "~1.6.17",
     "gatsby-plugin-catch-links": "~1.0.1",
     "gatsby-plugin-google-analytics": "^1.0.8",
@@ -57,6 +58,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:e2e": "nightwatch",
-    "test:e2e:verbose": "nightwatch --verbose"
+    "test:e2e:verbose": "nightwatch --verbose",
+    "jay": "jay"
   }
 }

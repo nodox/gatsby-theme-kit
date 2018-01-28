@@ -1,28 +1,17 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-
+import Post from '../components/Post';
 
 export default function Template({ data, pathContext }) {
-  const { markdownRemark } = data;
-  const {
-    frontmatter,
-    html,
-  } = markdownRemark;
-
+  const { markdownRemark: post } = data;
+  const { next, prev } = pathContext;
   return (
-    <div>
-      <p
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-      <Link to="/">Home</Link>
-    </div>
-
+    <Post post={post} next={next} prev={prev} />
   );
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query MassivelyBlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
