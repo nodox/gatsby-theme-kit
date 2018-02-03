@@ -1,0 +1,16 @@
+.preview {
+  display: block;
+  padding: 2rem;
+  margin: 0 auto 25px;
+
+  width: 40%;
+  
+  color: #000;
+  text-decoration: none;
+  border: 1px solid black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
