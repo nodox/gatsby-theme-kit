@@ -5,7 +5,7 @@ export function Starter() {
   return (
     <div id="main">
       <p>
-        Hello from Starter Components.
+        Hello from Starter.
       </p>
     </div>
   );
