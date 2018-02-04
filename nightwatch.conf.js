@@ -18,9 +18,9 @@ module.exports = {
   "src_folders": ["src/__e2e__"],
   "output_folder": "reports",
   "selenium": {
-    // "start_process": true,
-    // "server_path": jar.path,
-    // "live_output": true,
+    "start_process": true,
+    "server_path": jar.path,
+    "live_output": true,
     "port": 4444,
     "cli_args": {
       "webdriver.chrome.driver" : BINPATH + "chromedriver",
@@ -30,7 +30,7 @@ module.exports = {
   "test_workers": {
     "enabled": true,
     "workers": "auto"
-  }, 
+  },
 
   "test_settings": {
     "default": {
@@ -47,7 +47,7 @@ module.exports = {
         "browserName": "chrome",
         "chromeOptions": {
           "args": [
-            // "--headless",
+            "--headless",
             "--no-sandbox",
             "--no-default-browser-check",
             "--no-first-run",
