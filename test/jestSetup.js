@@ -9,6 +9,8 @@ Enzyme.configure({ adapter: new Adapter() });
 global.shallow = shallow;
 global.render = render;
 global.mount = mount;
+global.graphql = () => {};
+
 
 // Fail tests on any warning
 console.error = message => {
