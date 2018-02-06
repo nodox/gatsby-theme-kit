@@ -1,8 +1,17 @@
 # gatsby-theme-kit
-Use theme template kit to develop themes for [GatsbyJS][gatsby]
+A theme development template kit to develop themes for
+[Gatsby Manor](https://gatsbymanor.com).
 
-## Features
-1. Blog post listing with previews for each blog post
+## Contribute a Themes
+Read our theme development [tutorial](https://gatsbymanor.com/docs/tutorials/theme-development) to learn
+how to use our theme kit to develop a theme. Afterwards read our guide on how
+to [contribute your theme](https://gatsbymanor.com/docs/contribute/contribute-a-theme)
 
-[gatsby]: https://www.gatsbyjs.org/
-[gatsby-remark-images]: https://www.gatsbyjs.org/docs/packages/gatsby-remark-images/
+## Themes Gallery
+The collection of themes found on [Gatsby Manor](https://gatsbymanor.com).
+- [Massively](https://github.com/gatsbymanor/gatsby-theme-massively)
+- [Lens](https://github.com/gatsbymanor/gatsby-theme-lens)
+- [Photon](https://github.com/gatsbymanor/gatsby-theme-photon)
+- [Tessellate](https://github.com/gatsbymanor/gatsby-theme-tessellate)
+- [Identity](https://github.com/gatsbymanor/gatsby-theme-identity)
+- [Dimension](https://github.com/gatsbymanor/gatsby-theme-dimension)
