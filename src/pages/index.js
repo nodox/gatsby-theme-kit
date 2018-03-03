@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { Starter } from '../components/Starter';
 
-import '../assets/css/main.css';
+import '../assets/sass/main.scss';
 
 import thumbImage01 from '../images/thumbs/01.jpg';
 import thumbImage02 from '../images/thumbs/02.jpg';
