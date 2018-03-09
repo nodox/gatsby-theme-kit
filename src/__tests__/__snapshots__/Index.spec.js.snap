@@ -1,0 +1,456 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Index /> should render correctly 1`] = `
+<div
+  id="wrapper"
+>
+  <header
+    class="alt"
+    id="header"
+  >
+    <span
+      class="logo"
+    >
+      <img
+        alt=""
+        src="images/logo.svg"
+      />
+    </span>
+    <h1>
+      Stellar
+    </h1>
+    <p>
+      Just another free, fully responsive site template
+      <br />
+      built by 
+      <a
+        href="https://twitter.com/ajlkn"
+      >
+        @ajlkn
+      </a>
+       for 
+      <a
+        href="https://html5up.net"
+      >
+        HTML5 UP
+      </a>
+      .
+    </p>
+  </header>
+  <nav
+    id="nav"
+  >
+    <ul>
+      <li>
+        <a
+          class="active"
+          href="#intro"
+        >
+          Introduction
+        </a>
+      </li>
+      <li>
+        <a
+          href="#first"
+        >
+          First Section
+        </a>
+      </li>
+      <li>
+        <a
+          href="#second"
+        >
+          Second Section
+        </a>
+      </li>
+      <li>
+        <a
+          href="#cta"
+        >
+          Get Started
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    id="main"
+  >
+    <section
+      class="main"
+      id="intro"
+    >
+      <div
+        class="spotlight"
+      >
+        <div
+          class="content"
+        >
+          <header
+            class="major"
+          >
+            <h2>
+              Ipsum sed adipiscing
+            </h2>
+          </header>
+          <p>
+            Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
+          </p>
+          <ul
+            class="actions"
+          >
+            <li>
+              <a
+                class="button"
+                href="generic.html"
+              >
+                Learn More
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span
+          class="image"
+        >
+          <img
+            alt=""
+            src="images/pic01.jpg"
+          />
+        </span>
+      </div>
+    </section>
+    <section
+      class="main special"
+      id="first"
+    >
+      <header
+        class="major"
+      >
+        <h2>
+          Magna veroeros
+        </h2>
+      </header>
+      <ul
+        class="features"
+      >
+        <li>
+          <span
+            class="icon major style1 fa-code"
+          />
+          <h3>
+            Ipsum consequat
+          </h3>
+          <p>
+            Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.
+          </p>
+        </li>
+        <li>
+          <span
+            class="icon major style3 fa-copy"
+          />
+          <h3>
+            Amed sed feugiat
+          </h3>
+          <p>
+            Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.
+          </p>
+        </li>
+        <li>
+          <span
+            class="icon major style5 fa-diamond"
+          />
+          <h3>
+            Dolor nullam
+          </h3>
+          <p>
+            Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.
+          </p>
+        </li>
+      </ul>
+      <footer
+        class="major"
+      >
+        <ul
+          class="actions"
+        >
+          <li>
+            <a
+              class="button"
+              href="generic.html"
+            >
+              Learn More
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+    <section
+      class="main special"
+      id="second"
+    >
+      <header
+        class="major"
+      >
+        <h2>
+          Ipsum consequat
+        </h2>
+        <p>
+          Donec imperdiet consequat consequat. Suspendisse feugiat congue
+          <br />
+          posuere. Nulla massa urna, fermentum eget quam aliquet.
+        </p>
+      </header>
+      <ul
+        class="statistics"
+      >
+        <li
+          class="style1"
+        >
+          <span
+            class="icon fa-code-fork"
+          />
+          <strong>
+            5,120
+          </strong>
+           Etiam
+        </li>
+        <li
+          class="style2"
+        >
+          <span
+            class="icon fa-folder-open-o"
+          />
+          <strong>
+            8,192
+          </strong>
+           Magna
+        </li>
+        <li
+          class="style3"
+        >
+          <span
+            class="icon fa-signal"
+          />
+          <strong>
+            2,048
+          </strong>
+           Tempus
+        </li>
+        <li
+          class="style4"
+        >
+          <span
+            class="icon fa-laptop"
+          />
+          <strong>
+            4,096
+          </strong>
+           Aliquam
+        </li>
+        <li
+          class="style5"
+        >
+          <span
+            class="icon fa-diamond"
+          />
+          <strong>
+            1,024
+          </strong>
+           Nullam
+        </li>
+      </ul>
+      <p
+        class="content"
+      >
+        Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.
+      </p>
+      <footer
+        class="major"
+      >
+        <ul
+          class="actions"
+        >
+          <li>
+            <a
+              class="button"
+              href="generic.html"
+            >
+              Learn More
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+    <section
+      class="main special"
+      id="cta"
+    >
+      <header
+        class="major"
+      >
+        <h2>
+          Congue imperdiet
+        </h2>
+        <p>
+          Donec imperdiet consequat consequat. Suspendisse feugiat congue
+          <br />
+          posuere. Nulla massa urna, fermentum eget quam aliquet.
+        </p>
+      </header>
+      <footer
+        class="major"
+      >
+        <ul
+          class="actions"
+        >
+          <li>
+            <a
+              class="button special"
+              href="generic.html"
+            >
+              Get Started
+            </a>
+          </li>
+          <li>
+            <a
+              class="button"
+              href="generic.html"
+            >
+              Learn More
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+  </div>
+  <footer
+    id="footer"
+  >
+    <section>
+      <h2>
+        Aliquam sed mauris
+      </h2>
+      <p>
+        Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
+      </p>
+      <ul
+        class="actions"
+      >
+        <li>
+          <a
+            class="button"
+            href="generic.html"
+          >
+            Learn More
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>
+        Etiam feugiat
+      </h2>
+      <dl
+        class="alt"
+      >
+        <dt>
+          Address
+        </dt>
+        <dd>
+          1234 Somewhere Road • Nashville, TN 00000 • USA
+        </dd>
+        <dt>
+          Phone
+        </dt>
+        <dd>
+          (000) 000-0000 x 0000
+        </dd>
+        <dt>
+          Email
+        </dt>
+        <dd>
+          <a
+            href="#"
+          >
+            information@untitled.tld
+          </a>
+        </dd>
+      </dl>
+      <ul
+        class="icons"
+      >
+        <li>
+          <a
+            class="icon fa-twitter alt"
+            href="#"
+          >
+            <span
+              class="label"
+            >
+              Twitter
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="icon fa-facebook alt"
+            href="#"
+          >
+            <span
+              class="label"
+            >
+              Facebook
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="icon fa-instagram alt"
+            href="#"
+          >
+            <span
+              class="label"
+            >
+              Instagram
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="icon fa-github alt"
+            href="#"
+          >
+            <span
+              class="label"
+            >
+              GitHub
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="icon fa-dribbble alt"
+            href="#"
+          >
+            <span
+              class="label"
+            >
+              Dribbble
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <p
+      class="copyright"
+    >
+      © Untitled. Design: 
+      <a
+        href="https://html5up.net"
+      >
+        HTML5 UP
+      </a>
+      .
+    </p>
+  </footer>
+</div>
+`;

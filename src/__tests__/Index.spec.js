@@ -1,14 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Starter } from '../components/Starter';
+import Index from '../pages/index';
 
-describe('<Starter />', () => {
-  const component = mount(
-    <Starter />
-  );
+describe('<Index />', () => {
+  const component = renderer.create(<Index />).toJSON();
 
   it('should render correctly', () => {
     expect(component).toMatchSnapshot();
   });
-
 });
