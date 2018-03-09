@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render correctly 1`] = `
+<header
+  class="alt"
+  id="header"
+>
+  <span
+    class="logo"
+  >
+    <img
+      alt=""
+      src="images/logo.svg"
+    />
+  </span>
+  <h1>
+    Stellar
+  </h1>
+  <p>
+    Just another free, fully responsive site template
+    <br />
+    built by 
+    <a
+      href="https://twitter.com/ajlkn"
+    >
+      @ajlkn
+    </a>
+     for 
+    <a
+      href="https://html5up.net"
+    >
+      HTML5 UP
+    </a>
+    .
+  </p>
+</header>
+`;
