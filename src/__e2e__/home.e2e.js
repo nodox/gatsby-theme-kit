@@ -6,19 +6,22 @@ const INTRO = {
 const FIRST_SECTION = {
   header: '#main > #first > header > h2',
   features: '#main > #first > ul > li > h3',
-  footer: '#main > #first > footer > ul > li > .button',
+  footer: '#main > #first > footer',
+  button: '#main > #first > footer > ul > li > .button',
 };
 
 const SECOND_SECTION = {
   header: '#main > #second > header > h2' ,
   statistics: '#main > #second > ul > li > span',
   content: '#main > #second > p',
-  footer: '#main > #second > footer > ul > li > .button'
+  footer: '#main > #second > footer',
+  button: '#main > #second > footer > ul > li > .button'
 };
 
 const GET_STARTED = {
   header: '#main > #cta > header > h2',
-  footer: '#main > #cta > footer > ul > li > .button'
+  footer: '#main > #cta > footer',
+  button: '#main > #cta > footer > ul > li > .button'
 };
 
 module.exports = {
@@ -45,6 +48,20 @@ module.exports = {
 
     client.expect.element(GET_STARTED.header).to.be.visible;
     client.expect.element(GET_STARTED.footer).to.be.visible;
+    client.end();
+  },
+  'Generic page test': function(client) {
+    client
+      .resizeWindow(700, 800)
+      .url('http://localhost:8000')
+      .waitForElementVisible('body');
+    client
+      .click(FIRST_SECTION.button);
+
+    client.expect.element('body').to.be.present.before(1000);
+    client.expect.element('#main > #content > span > img').to.be.visible;
+    client.expect.element('#main > #content > h2').to.be.visible;
+    client.expect.element('#main > #content > p').to.be.visible;
     client.end();
   }
 };

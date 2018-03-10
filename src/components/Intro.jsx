@@ -1,5 +1,6 @@
 import React from 'react';
 import picture from '../images/pic01.jpg'
+import Link from 'gatsby-link';
 
 export default function Intro(props) {
   return (
@@ -13,7 +14,7 @@ export default function Intro(props) {
             adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
             Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
           <ul className="actions">
-            <li><a href="generic.html" className="button">Learn More</a></li>
+            <li><Link to="/generic" className="button">Learn More</Link></li>
           </ul>
         </div>
         <span className="image"><img src={picture} alt="" /></span>

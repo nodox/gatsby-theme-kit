@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 export default function GetStarted(props) {
   return (
@@ -10,8 +11,8 @@ export default function GetStarted(props) {
       </header>
       <footer className="major">
         <ul className="actions">
-          <li><a href="generic.html" className="button special">Get Started</a></li>
-          <li><a href="generic.html" className="button">Learn More</a></li>
+          <li><Link to="/generic" className="button special">Get Started</Link></li>
+          <li><Link to="/generic" className="button">Learn More</Link></li>
         </ul>
       </footer>
     </section>

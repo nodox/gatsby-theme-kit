@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 export default function Footer(props) {
   return (
@@ -7,7 +8,7 @@ export default function Footer(props) {
         <h2>Aliquam sed mauris</h2>
         <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
         <ul className="actions">
-          <li><a href="generic.html" className="button">Learn More</a></li>
+          <li><Link to="/generic" className="button">Learn More</Link></li>
         </ul>
       </section>
       <section>
