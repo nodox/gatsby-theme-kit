@@ -5,11 +5,11 @@ exports[`<Index /> should render correctly 1`] = `
   id="wrapper"
 >
   <header
-    class="alt"
+    className="alt"
     id="header"
   >
     <span
-      class="logo"
+      className="logo"
     >
       <img
         alt=""
@@ -43,7 +43,7 @@ exports[`<Index /> should render correctly 1`] = `
     <ul>
       <li>
         <a
-          class="active"
+          className="active"
           href="#intro"
         >
           Introduction
@@ -76,17 +76,17 @@ exports[`<Index /> should render correctly 1`] = `
     id="main"
   >
     <section
-      class="main"
+      className="main"
       id="intro"
     >
       <div
-        class="spotlight"
+        className="spotlight"
       >
         <div
-          class="content"
+          className="content"
         >
           <header
-            class="major"
+            className="major"
           >
             <h2>
               Ipsum sed adipiscing
@@ -96,11 +96,11 @@ exports[`<Index /> should render correctly 1`] = `
             Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
           </p>
           <ul
-            class="actions"
+            className="actions"
           >
             <li>
               <a
-                class="button"
+                className="button"
                 href="generic.html"
               >
                 Learn More
@@ -109,7 +109,7 @@ exports[`<Index /> should render correctly 1`] = `
           </ul>
         </div>
         <span
-          class="image"
+          className="image"
         >
           <img
             alt=""
@@ -119,22 +119,22 @@ exports[`<Index /> should render correctly 1`] = `
       </div>
     </section>
     <section
-      class="main special"
+      className="main special"
       id="first"
     >
       <header
-        class="major"
+        className="major"
       >
         <h2>
           Magna veroeros
         </h2>
       </header>
       <ul
-        class="features"
+        className="features"
       >
         <li>
           <span
-            class="icon major style1 fa-code"
+            className="icon major style1 fa-code"
           />
           <h3>
             Ipsum consequat
@@ -145,7 +145,7 @@ exports[`<Index /> should render correctly 1`] = `
         </li>
         <li>
           <span
-            class="icon major style3 fa-copy"
+            className="icon major style3 fa-copy"
           />
           <h3>
             Amed sed feugiat
@@ -156,7 +156,7 @@ exports[`<Index /> should render correctly 1`] = `
         </li>
         <li>
           <span
-            class="icon major style5 fa-diamond"
+            className="icon major style5 fa-diamond"
           />
           <h3>
             Dolor nullam
@@ -167,14 +167,14 @@ exports[`<Index /> should render correctly 1`] = `
         </li>
       </ul>
       <footer
-        class="major"
+        className="major"
       >
         <ul
-          class="actions"
+          className="actions"
         >
           <li>
             <a
-              class="button"
+              className="button"
               href="generic.html"
             >
               Learn More
@@ -184,11 +184,11 @@ exports[`<Index /> should render correctly 1`] = `
       </footer>
     </section>
     <section
-      class="main special"
+      className="main special"
       id="second"
     >
       <header
-        class="major"
+        className="major"
       >
         <h2>
           Ipsum consequat
@@ -200,13 +200,13 @@ exports[`<Index /> should render correctly 1`] = `
         </p>
       </header>
       <ul
-        class="statistics"
+        className="statistics"
       >
         <li
-          class="style1"
+          className="style1"
         >
           <span
-            class="icon fa-code-fork"
+            className="icon fa-code-fork"
           />
           <strong>
             5,120
@@ -214,10 +214,10 @@ exports[`<Index /> should render correctly 1`] = `
            Etiam
         </li>
         <li
-          class="style2"
+          className="style2"
         >
           <span
-            class="icon fa-folder-open-o"
+            className="icon fa-folder-open-o"
           />
           <strong>
             8,192
@@ -225,10 +225,10 @@ exports[`<Index /> should render correctly 1`] = `
            Magna
         </li>
         <li
-          class="style3"
+          className="style3"
         >
           <span
-            class="icon fa-signal"
+            className="icon fa-signal"
           />
           <strong>
             2,048
@@ -236,10 +236,10 @@ exports[`<Index /> should render correctly 1`] = `
            Tempus
         </li>
         <li
-          class="style4"
+          className="style4"
         >
           <span
-            class="icon fa-laptop"
+            className="icon fa-laptop"
           />
           <strong>
             4,096
@@ -247,10 +247,10 @@ exports[`<Index /> should render correctly 1`] = `
            Aliquam
         </li>
         <li
-          class="style5"
+          className="style5"
         >
           <span
-            class="icon fa-diamond"
+            className="icon fa-diamond"
           />
           <strong>
             1,024
@@ -259,19 +259,19 @@ exports[`<Index /> should render correctly 1`] = `
         </li>
       </ul>
       <p
-        class="content"
+        className="content"
       >
         Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.
       </p>
       <footer
-        class="major"
+        className="major"
       >
         <ul
-          class="actions"
+          className="actions"
         >
           <li>
             <a
-              class="button"
+              className="button"
               href="generic.html"
             >
               Learn More
@@ -281,11 +281,11 @@ exports[`<Index /> should render correctly 1`] = `
       </footer>
     </section>
     <section
-      class="main special"
+      className="main special"
       id="cta"
     >
       <header
-        class="major"
+        className="major"
       >
         <h2>
           Congue imperdiet
@@ -297,14 +297,14 @@ exports[`<Index /> should render correctly 1`] = `
         </p>
       </header>
       <footer
-        class="major"
+        className="major"
       >
         <ul
-          class="actions"
+          className="actions"
         >
           <li>
             <a
-              class="button special"
+              className="button special"
               href="generic.html"
             >
               Get Started
@@ -312,7 +312,7 @@ exports[`<Index /> should render correctly 1`] = `
           </li>
           <li>
             <a
-              class="button"
+              className="button"
               href="generic.html"
             >
               Learn More
@@ -333,11 +333,11 @@ exports[`<Index /> should render correctly 1`] = `
         Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
       </p>
       <ul
-        class="actions"
+        className="actions"
       >
         <li>
           <a
-            class="button"
+            className="button"
             href="generic.html"
           >
             Learn More
@@ -350,7 +350,7 @@ exports[`<Index /> should render correctly 1`] = `
         Etiam feugiat
       </h2>
       <dl
-        class="alt"
+        className="alt"
       >
         <dt>
           Address
@@ -376,15 +376,15 @@ exports[`<Index /> should render correctly 1`] = `
         </dd>
       </dl>
       <ul
-        class="icons"
+        className="icons"
       >
         <li>
           <a
-            class="icon fa-twitter alt"
+            className="icon fa-twitter alt"
             href="#"
           >
             <span
-              class="label"
+              className="label"
             >
               Twitter
             </span>
@@ -392,11 +392,11 @@ exports[`<Index /> should render correctly 1`] = `
         </li>
         <li>
           <a
-            class="icon fa-facebook alt"
+            className="icon fa-facebook alt"
             href="#"
           >
             <span
-              class="label"
+              className="label"
             >
               Facebook
             </span>
@@ -404,11 +404,11 @@ exports[`<Index /> should render correctly 1`] = `
         </li>
         <li>
           <a
-            class="icon fa-instagram alt"
+            className="icon fa-instagram alt"
             href="#"
           >
             <span
-              class="label"
+              className="label"
             >
               Instagram
             </span>
@@ -416,11 +416,11 @@ exports[`<Index /> should render correctly 1`] = `
         </li>
         <li>
           <a
-            class="icon fa-github alt"
+            className="icon fa-github alt"
             href="#"
           >
             <span
-              class="label"
+              className="label"
             >
               GitHub
             </span>
@@ -428,11 +428,11 @@ exports[`<Index /> should render correctly 1`] = `
         </li>
         <li>
           <a
-            class="icon fa-dribbble alt"
+            className="icon fa-dribbble alt"
             href="#"
           >
             <span
-              class="label"
+              className="label"
             >
               Dribbble
             </span>
@@ -441,7 +441,7 @@ exports[`<Index /> should render correctly 1`] = `
       </ul>
     </section>
     <p
-      class="copyright"
+      className="copyright"
     >
       © Untitled. Design: 
       <a

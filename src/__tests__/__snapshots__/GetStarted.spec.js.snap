@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GetStarted /> should render correctly 1`] = `
+<section
+  className="main special"
+  id="cta"
+>
+  <header
+    className="major"
+  >
+    <h2>
+      Congue imperdiet
+    </h2>
+    <p>
+      Donec imperdiet consequat consequat. Suspendisse feugiat congue
+      <br />
+      posuere. Nulla massa urna, fermentum eget quam aliquet.
+    </p>
+  </header>
+  <footer
+    className="major"
+  >
+    <ul
+      className="actions"
+    >
+      <li>
+        <a
+          className="button special"
+          href="generic.html"
+        >
+          Get Started
+        </a>
+      </li>
+      <li>
+        <a
+          className="button"
+          href="generic.html"
+        >
+          Learn More
+        </a>
+      </li>
+    </ul>
+  </footer>
+</section>
+`;

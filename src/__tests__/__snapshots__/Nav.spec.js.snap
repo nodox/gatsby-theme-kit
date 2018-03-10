@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> should render correctly 1`] = `
+<nav
+  id="nav"
+>
+  <ul>
+    <li>
+      <a
+        className="active"
+        href="#intro"
+      >
+        Introduction
+      </a>
+    </li>
+    <li>
+      <a
+        href="#first"
+      >
+        First Section
+      </a>
+    </li>
+    <li>
+      <a
+        href="#second"
+      >
+        Second Section
+      </a>
+    </li>
+    <li>
+      <a
+        href="#cta"
+      >
+        Get Started
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

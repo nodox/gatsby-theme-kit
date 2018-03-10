@@ -2,11 +2,11 @@
 
 exports[`<Header /> should render correctly 1`] = `
 <header
-  class="alt"
+  className="alt"
   id="header"
 >
   <span
-    class="logo"
+    className="logo"
   >
     <img
       alt=""
