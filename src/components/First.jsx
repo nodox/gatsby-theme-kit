@@ -35,7 +35,7 @@ export default class First extends React.Component {
         <footer className="major">
           <ul className="actions">
             <li>
-              <Link to={"/generic"} className="button">Learn More</Link>
+              <Link to="/generic" className="button">Learn More</Link>
             </li>
           </ul>
         </footer>
