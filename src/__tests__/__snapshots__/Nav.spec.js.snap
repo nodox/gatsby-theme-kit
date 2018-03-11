@@ -2,37 +2,51 @@
 
 exports[`<Nav /> should render correctly 1`] = `
 <nav
+  className="no"
   id="nav"
 >
   <ul>
     <li>
-      <a
-        className="active"
-        href="#intro"
+      <Link
+        activeClass="active"
+        duration={800}
+        offset={0}
+        smooth={true}
+        spy={true}
+        to="intro"
       >
         Introduction
-      </a>
-    </li>
-    <li>
-      <a
-        href="#first"
+      </Link>
+      <Link
+        activeClass="active"
+        duration={800}
+        offset={0}
+        smooth={true}
+        spy={true}
+        to="first"
       >
         First Section
-      </a>
-    </li>
-    <li>
-      <a
-        href="#second"
+      </Link>
+      <Link
+        activeClass="active"
+        duration={800}
+        offset={0}
+        smooth={true}
+        spy={true}
+        to="second"
       >
         Second Section
-      </a>
-    </li>
-    <li>
-      <a
-        href="#cta"
+      </Link>
+      <Link
+        activeClass="active"
+        duration={800}
+        offset={0}
+        smooth={true}
+        spy={true}
+        to="cta"
       >
         Get Started
-      </a>
+      </Link>
     </li>
   </ul>
 </nav>

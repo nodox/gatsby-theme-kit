@@ -5,13 +5,21 @@ exports[`<Index /> should render correctly 1`] = `
   id="wrapper"
 >
   <Header />
-  <Nav />
-  <Main>
-    <Intro />
-    <First />
-    <Second />
-    <GetStarted />
-  </Main>
-  <Footer />
+  <Container>
+    <Sticky
+      bottomOffset={0}
+      disableCompensation={false}
+      disableHardwareAcceleration={false}
+      relative={false}
+      topOffset={0}
+    />
+    <Main>
+      <Intro />
+      <First />
+      <Second />
+      <GetStarted />
+    </Main>
+    <Footer />
+  </Container>
 </div>
 `;

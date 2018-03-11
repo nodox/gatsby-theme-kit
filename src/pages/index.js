@@ -7,6 +7,7 @@ import First from '../components/First';
 import Second from '../components/Second';
 import GetStarted from '../components/GetStarted';
 import Footer from '../components/Footer';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import '../sass/main.scss';
 
@@ -15,14 +16,31 @@ export default function Index({ data }) {
   return (
     <div id="wrapper">
       <Header />
-      <Nav />
-      <Main>
-        <Intro />
-        <First />
-        <Second />
-        <GetStarted />
-      </Main>
-      <Footer />
+      <StickyContainer>
+        <Sticky>
+          {
+            ({
+               style,
+               isSticky,
+               wasSticky,
+               distanceFromTop,
+               distanceFromBottom,
+               calculatedHeight
+             }) => {
+              return (
+                <Nav isSticky={isSticky} />
+              )
+            }
+          }
+        </Sticky>
+        <Main>
+          <Intro />
+          <First />
+          <Second />
+          <GetStarted />
+        </Main>
+        <Footer />
+      </StickyContainer>
     </div>
   );
 }
