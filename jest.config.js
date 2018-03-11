@@ -5,7 +5,7 @@ module.exports = {
     ".cache/",
   ],
   moduleNameMapper: {
-    "^.+\\.(css|scss)$": "identity-obj-proxy"
+    "^.+\\.(css|scss|jpg|jpeg|png|gif|svg)$": "identity-obj-proxy"
   },
   setupFiles: [
     "./test/shim.js",

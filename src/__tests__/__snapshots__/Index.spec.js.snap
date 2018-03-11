@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Index /> should render correctly 1`] = `
+<div
+  id="wrapper"
+>
+  <Header />
+  <Container>
+    <Sticky
+      bottomOffset={0}
+      disableCompensation={false}
+      disableHardwareAcceleration={false}
+      relative={false}
+      topOffset={0}
+    />
+    <Main>
+      <Intro />
+      <First />
+      <Second />
+      <GetStarted />
+    </Main>
+    <Footer />
+  </Container>
+</div>
+`;

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> should render correctly 1`] = `
+<nav
+  className="no"
+  id="nav"
+>
+  <ul>
+    <li>
+      <Link
+        activeClass="active"
+        duration={800}
+        offset={0}
+        smooth={true}
+        spy={true}
+        to="intro"
+      >
+        Introduction
+      </Link>
+      <Link
+        activeClass="active"
+        duration={800}
+        offset={0}
+        smooth={true}
+        spy={true}
+        to="first"
+      >
+        First Section
+      </Link>
+      <Link
+        activeClass="active"
+        duration={800}
+        offset={0}
+        smooth={true}
+        spy={true}
+        to="second"
+      >
+        Second Section
+      </Link>
+      <Link
+        activeClass="active"
+        duration={800}
+        offset={0}
+        smooth={true}
+        spy={true}
+        to="cta"
+      >
+        Get Started
+      </Link>
+    </li>
+  </ul>
+</nav>
+`;

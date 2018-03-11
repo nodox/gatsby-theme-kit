@@ -1,14 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Starter } from '../components/Starter';
+import Footer from '../components/Footer';
 
-describe('<Starter />', () => {
-  const component = mount(
-    <Starter />
-  );
+describe('<Footer />', () => {
+  const component = shallow(<Footer />);
 
   it('should render correctly', () => {
     expect(component).toMatchSnapshot();
   });
-
 });
