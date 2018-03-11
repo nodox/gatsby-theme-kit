@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import GetStarted from '../components/GetStarted';
 
 describe('<GetStarted />', () => {
-  const component = renderer.create(<GetStarted />).toJSON();
+  const component = shallow(<GetStarted />);
 
   it('should render correctly', () => {
     expect(component).toMatchSnapshot();

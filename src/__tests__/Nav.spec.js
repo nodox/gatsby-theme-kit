@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import Nav from '../components/Nav';
 
 describe('<Nav />', () => {
-  const component = renderer.create(<Nav />).toJSON();
+  const component = shallow(<Nav />);
 
   it('should render correctly', () => {
     expect(component).toMatchSnapshot();

@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import Intro from '../components/Intro';
 
 describe('<Intro />', () => {
-  const component = renderer.create(<Intro />).toJSON();
+  const component = shallow(<Intro />);
 
   it('should render correctly', () => {
     expect(component).toMatchSnapshot();

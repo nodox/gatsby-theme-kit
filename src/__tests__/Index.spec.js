@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import Index from '../pages/index';
 
 describe('<Index />', () => {
-  const component = renderer.create(<Index />).toJSON();
+  const component = shallow(<Index />);
 
   it('should render correctly', () => {
     expect(component).toMatchSnapshot();
