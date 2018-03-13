@@ -59,3 +59,10 @@ The collection of themes found on Gatsby Manor.
   [] Import the stylesheets
   [] Replace image pages with images imported from the filesystem
   [] Repeat for any other images in the html
+
+
+6. Create components from repeating elements, using appropriate naming conventions
+
+
+Use knowledge of javascript, reactJS and Chrome DevTools to recreate the theme experience.
+  - Not as helpful I know
